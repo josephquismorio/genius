@@ -1,0 +1,8 @@
+scid = "YOUR-SPOTIFY-CLIENT-ID"
+scsecret = "YOUR-SPOTIFY-CLIENT-SECRET"
+sredirectURI = "URI"
+susername = "YOUR-SPOTIFY-USERNAME"
+scope = "user-read-currently-playing"
+gcid = "YOUR-GENIUS-CLIENT-ID"
+gcsecret = "YOUR-GENIUS-CLIENT-SECRET"
+gtoken = "YOUR-GENIUS-TOKEN"
