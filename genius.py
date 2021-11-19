@@ -53,6 +53,14 @@ def getCurrentTrackLyrics(currentArtist, currentSong, currentURI):
                     continue
             else:
                 print("Lyrics not found.")
-        
-currentArtist, currentSong, currentURI = currentTrackInfo()
-getCurrentTrackLyrics(currentArtist, currentSong, currentURI)
+                
+def run():
+    print("--------------------------------")
+    print("*** BE SURE TO EITHER BE PLAYING MUSIC FROM AN ALBUM, PLAYLIST, OR QUEUE. ***")
+    print("This program is sensitive to small intervals of time between songs, so \nmake sure you are able to minimize that period of time as much as possible.")
+    print("Otherwise, you risk crashing the program.")
+    time.sleep(8)
+    currentArtist, currentSong, currentURI = currentTrackInfo()
+    getCurrentTrackLyrics(currentArtist, currentSong, currentURI)
+
+run()
