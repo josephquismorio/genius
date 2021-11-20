@@ -29,6 +29,7 @@ def currentTrackInfo():
 def getCurrentTrackLyrics(currentArtist, currentSong, currentURI):
     uri = None
     while True:
+        time.sleep(3) #trying to mitigate the interval lag... gonna try something else perhaps?
         currentArtist, currentSong, currentURI = currentTrackInfo()
         if uri != currentURI:
             print("--------------------------------")
@@ -59,7 +60,7 @@ def run():
     print("*** BE SURE TO EITHER BE PLAYING MUSIC FROM AN ALBUM, PLAYLIST, OR QUEUE. ***")
     print("This program is sensitive to small intervals of time between songs, so \nmake sure you are able to minimize that period of time as much as possible.")
     print("Otherwise, you risk crashing the program.")
-    time.sleep(8)
+    time.sleep(6)
     currentArtist, currentSong, currentURI = currentTrackInfo()
     getCurrentTrackLyrics(currentArtist, currentSong, currentURI)
 
